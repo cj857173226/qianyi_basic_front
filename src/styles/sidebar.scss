@@ -1,0 +1,147 @@
+.avue-sidebar {
+    user-select: none;
+    position: relative;
+    // padding-top: 74px;
+    height: 100%;
+    position: relative;
+    background-color: $menu-bg;
+    transition: width 0.2s;
+    box-sizing: border-box;
+    &--tip {
+        width: 90%;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        position: absolute;
+        top: 5px;
+        left: 5%;
+        color: #ccc;
+        z-index: 2;
+        text-align: center;
+        font-size: 14px;
+        background-color: $menu-bg;
+    }
+    .el-menu {
+        background-color: $menu-bg;
+    }
+    .el-menu--inline {
+        background-color: $sub-menu-bg;
+        .el-menu-item {
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .el-menu-item,
+    .el-submenu__title {
+        font-size: 14px;
+        height: 56px;
+        line-height: 56px;
+    }
+    .el-menu-item {
+        span,
+        i {
+            color: $menu-color;
+            &[class*="icon-"] {
+                color: $menu-icon-color;
+            }
+            &.el-submenu__icon-arrow {
+                color: $menu-color;
+            }
+        }
+        span {
+            font-size: 16px;
+        }
+        &:hover {
+            background-color: $menu-hover-bg;
+            color: $menu-hover-color;
+            span,
+            i {
+                color: $menu-icon-hover-color;
+            }
+        }
+        &.is-active {
+            background-color: $menu-hover-bg;
+            span,
+            i {
+                color: $menu-icon-hover-color;
+            }
+            &:hover {
+                background-color: $menu-hover-bg;
+            }
+        }
+    }
+    .el-submenu__title {
+        span,
+        i {
+            color: $menu-color;
+            &[class*="icon-"] {
+                color: $menu-icon-color;
+            }
+            &.el-submenu__icon-arrow {
+                color: $menu-color;
+            }
+        }
+        span {
+            font-size: 16px;
+        }
+        &:hover {
+            i {
+                &[class*="icon-"] {
+                    color: $menu-icon-hover-color;
+                }
+                &.el-submenu__icon-arrow {
+                    color: $menu-hover-color;
+                }
+            }
+            span {
+                color: $menu-hover-color;
+            }
+            background-color: $menu-hover-bg;
+        }
+    }
+    .el-submenu .el-menu-item {
+        height: 50px;
+        line-height: 50px;
+        span,
+        i {
+            color: $sub-menu-color;
+        }
+        &.is-active {
+            background-color: rgba($color: $sub-menu-hover-bg, $alpha: 1);
+
+            span,
+            i {
+                color: $sub-menu-hover-color;
+            }
+            &:hover {
+                background-color: rgba($color: $sub-menu-hover-bg, $alpha: 1);
+                span,
+                i {
+                    color: $sub-menu-hover-color;
+                }
+            }
+        }
+        &:hover {
+            background-color: rgba($color: $sub-menu-hover-bg, $alpha: 1);
+            span,
+            i {
+                color: $sub-menu-hover-color;
+            }
+        }
+    }
+}
+.el-submenu {
+    .el-menu--inline {
+        .el-submenu__title {
+            &:hover {
+                background-color: rgba(0, 194, 255, 0.1);
+            }
+            > span {
+                font-size: 14px;
+            }
+        }
+    }
+}

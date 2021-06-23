@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97.26" height="100" viewBox="0 0 97.26 100">
+  <defs>
+    <filter id="vectorMask" x="-17.565" y="14.521" width="139.795" height="112.13" filterUnits="userSpaceOnUse">
+      <feOffset dy="14" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17" result="blur"/>
+      <feFlood flood-color="#645ef3" flood-opacity="0.522"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="矩形_5" data-name="矩形 5" width="97.26" height="100" transform="translate(-330 107)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0068f6" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#f0f6ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#67d4ff"/>
+      <stop offset="1" stop-color="#009aff"/>
+    </linearGradient>
+    <filter id="蒙版" x="-16.709" y="15.007" width="138.939" height="111.644" filterUnits="userSpaceOnUse">
+      <feOffset dy="14" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17" result="blur-2"/>
+      <feFlood flood-color="#645ef3" flood-opacity="0.522"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-2">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#vectorMask)">
+        <path id="vectorMask-2" data-name="vectorMask" d="M2.85,0H33.945a2.9,2.9,0,0,1,2.85,2.94V6.19a2.9,2.9,0,0,1-2.85,2.94H2.85A2.9,2.9,0,0,1,0,6.19V2.94A2.9,2.9,0,0,1,2.85,0Z" transform="translate(0)" fill="#e2ecff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+      </g>
+    </clipPath>
+    <filter id="路径_3" x="-17.565" y="16.089" width="139.975" height="110.562" filterUnits="userSpaceOnUse">
+      <feOffset dy="14" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17" result="blur-3"/>
+      <feFlood flood-color="#645ef3" flood-opacity="0.522"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="蒙版-2" x="31.545" y="27.765" width="26.502" height="26.502" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-4"/>
+      <feFlood flood-color="#645ef3" flood-opacity="0.212"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path-3">
+      <ellipse id="vectorMask-3" data-name="vectorMask" cx="9.751" cy="9.751" rx="9.751" ry="9.751" transform="translate(0 0)" fill="none" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-8" x1="0.165" y1="0.354" x2="0.835" y2="0.646" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#d0d8ff"/>
+    </linearGradient>
+    <filter id="路径_198" x="30.437" y="26.077" width="17.859" height="27.944" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-5"/>
+      <feFlood flood-color="#645ef3" flood-opacity="0.58"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-9" x1="0.055" y1="0.056" x2="0.945" y2="0.944" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#a9bcff"/>
+      <stop offset="1" stop-color="#7770ff"/>
+    </linearGradient>
+    <filter id="形状" x="5.608" y="-3.592" width="116.621" height="113.172" filterUnits="userSpaceOnUse">
+      <feOffset dy="14" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17" result="blur-6"/>
+      <feFlood flood-color="#645ef3" flood-opacity="0.522"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="形状备份" x="4.691" y="29.283" width="116.621" height="113.172" filterUnits="userSpaceOnUse">
+      <feOffset dy="14" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="17" result="blur-7"/>
+      <feFlood flood-color="#645ef3" flood-opacity="0.522"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形" x="32.783" y="64.89" width="24.086" height="18.002" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-8"/>
+      <feFlood flood-color="#645ef3" flood-opacity="0.212"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="蒙版组_4" data-name="蒙版组 4" transform="translate(330 -107)" clip-path="url(#clip-path)">
+    <g id="组_51" data-name="组 51" transform="translate(-759.5 290.35)">
+      <g id="编组" transform="translate(429.5 -184.35)">
+        <path id="路径" d="M1.171,97.221V25.906H0v-8.67H1.171V15H4.578V13.052H5.692V6.073L12.619,0l6.928,6.073v6.98h1.113V15h3.407v2.237h1.171v8.67H24.068V97.221l-11.449-.157Z" transform="translate(72.02)" fill="url(#linear-gradient)"/>
+        <rect id="矩形-2" data-name="矩形" width="14.431" height="49.155" transform="translate(43.806 12.621)" fill="url(#linear-gradient)"/>
+        <rect id="矩形备份_2" data-name="矩形备份 2" width="9.921" height="43.743" transform="translate(28.023 18.935)" fill="url(#linear-gradient)"/>
+        <rect id="矩形备份_3" data-name="矩形备份 3" width="16.46" height="43.743" transform="translate(4.757 11.022)" fill="url(#linear-gradient)"/>
+        <rect id="矩形备份_4" data-name="矩形备份 4" width="16.46" height="43.743" transform="translate(0 39.904)" opacity="0.6" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="组_1" data-name="组 1" transform="translate(458.85 -159.228)">
+        <rect id="矩形备份_8" data-name="矩形备份 8" width="34.941" height="41.756" rx="2" transform="translate(5.215 17.967)" opacity="0.3" fill="url(#linear-gradient-6)"/>
+        <path id="蒙版-3" data-name="蒙版" d="M2.1,0H41.65a2.1,2.1,0,0,1,2.1,2.1V53.176a2.1,2.1,0,0,1-2.1,2.1H2.1a2.1,2.1,0,0,1-2.1-2.1V2.1A2.1,2.1,0,0,1,2.1,0Z" transform="translate(1.039 0.094)" fill="url(#linear-gradient-6)"/>
+        <g id="路径_3-2" data-name="路径 3" transform="translate(4.585 27.9)">
+          <g transform="matrix(1, 0, 0, 1, -33.93, -52.02)" filter="url(#蒙版)">
+            <rect id="蒙版-4" data-name="蒙版" width="35.939" height="8.644" rx="2" transform="translate(34.79 52.51)" fill="#e2ecff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" opacity="0.2"/>
+          </g>
+          <g id="蒙版组_1" data-name="蒙版组 1" transform="translate(0 0)" clip-path="url(#clip-path-2)">
+            <g id="Mask_by_蒙版" data-name="Mask by 蒙版" transform="translate(0 1.567)">
+              <g transform="matrix(1, 0, 0, 1, -33.93, -53.59)" filter="url(#路径_3)">
+                <path id="路径_3-3" data-name="路径 3" d="M252.578,619.6H257.2c2.007,0,2.727-1.677,3.9-1.677s2.019,1.677,3.359,1.677,2.947-3.705,4.285-3.705,2.359,2.275,3.5,2.275,3.185-5.273,5.2-5.273,2.877,6.129,5.8,6.129a9.35,9.35,0,0,0,6.191-2.908c.383-.622-.308,4.341-.308,4.341H252.578Z" transform="translate(-218.64 -559.31)" fill="#e2ecff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" opacity="0.502"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -29.35, -24.12)" filter="url(#蒙版-2)">
+          <path id="蒙版-5" data-name="蒙版" d="M9.751,0A9.751,9.751,0,1,1,0,9.751,9.751,9.751,0,0,1,9.751,0Z" transform="translate(35.05 29.26)" fill="#e2ecff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+        </g>
+        <g id="Mask_by_蒙版-2" data-name="Mask by 蒙版" transform="translate(5.695 5.143)" clip-path="url(#clip-path-3)">
+          <g id="Mask_by_蒙版-3" data-name="Mask by 蒙版" transform="translate(-1.086 -1.686)">
+            <g transform="matrix(1, 0, 0, 1, -33.96, -27.58)" filter="url(#路径_198)">
+              <path id="路径_198-2" data-name="路径 198" d="M262.1,414.682v10.435l-4.779,9.316s-9.133-5.123-4.972-14.62S262.1,414.682,262.1,414.682Z" transform="translate(-217.3 -386.1)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" opacity="0.2" fill="url(#linear-gradient-8)"/>
+            </g>
+            <path id="路径_2" data-name="路径 2" d="M289.805,421.839l5.788,9.084,1.227-10.429a18.417,18.417,0,0,0-3.772,0A14.709,14.709,0,0,0,289.805,421.839Z" transform="translate(-284.757 -419.508)" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" fill="url(#linear-gradient-9)"/>
+          </g>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -29.35, -24.12)" filter="url(#形状)">
+          <path id="形状-2" data-name="形状" d="M12.836,10.172H1.676a.787.787,0,0,1-.786-.786V9.124a.787.787,0,0,1,.786-.786H12.836a.787.787,0,0,1,.786.786v.262A.787.787,0,0,1,12.836,10.172Zm0-4.169H3.222a.787.787,0,0,1-.786-.786V4.955a.787.787,0,0,1,.786-.786h9.614a.787.787,0,0,1,.786.786v.262A.787.787,0,0,1,12.836,6Zm0-4.169H.786A.787.787,0,0,1,0,1.048V.786A.787.787,0,0,1,.786,0h12.05a.787.787,0,0,1,.786.786v.262A.787.787,0,0,1,12.836,1.834Z" transform="translate(57.11 33.91)" fill="#e2ecff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -29.35, -24.12)" filter="url(#形状备份)">
+          <path id="形状备份-2" data-name="形状备份" d="M12.836,10.172H1.676a.787.787,0,0,1-.786-.786V9.124a.787.787,0,0,1,.786-.786H12.836a.787.787,0,0,1,.786.786v.262A.787.787,0,0,1,12.836,10.172Zm0-4.169H3.222a.787.787,0,0,1-.786-.786V4.955a.787.787,0,0,1,.786-.786h9.614a.787.787,0,0,1,.786.786v.262A.787.787,0,0,1,12.836,6Zm0-4.169H.786A.787.787,0,0,1,0,1.048V.786A.787.787,0,0,1,.786,0h12.05a.787.787,0,0,1,.786.786v.262A.787.787,0,0,1,12.836,1.834Z" transform="translate(56.19 66.78)" fill="#e2ecff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+        <g transform="matrix(1, 0, 0, 1, -29.35, -24.12)" filter="url(#矩形)">
+          <path id="矩形-3" data-name="矩形" d="M1.048,0h14.99a1.048,1.048,0,0,1,1.048,1.048V9.954A1.048,1.048,0,0,1,16.038,11H1.048A1.048,1.048,0,0,1,0,9.954V1.048A1.048,1.048,0,0,1,1.048,0Z" transform="translate(36.28 66.39)" fill="#e2ecff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+        </g>
+      </g>
+      <path id="椭圆形" d="M3.479,6.959a3.48,3.48,0,1,1,3.48-3.48A3.484,3.484,0,0,1,3.479,6.959Zm0-5.212A1.732,1.732,0,1,0,5.212,3.479,1.734,1.734,0,0,0,3.479,1.747Z" transform="translate(509.532 -115.987)" fill="url(#linear-gradient-6)"/>
+      <ellipse id="椭圆形-2" data-name="椭圆形" cx="22.27" cy="4.568" rx="22.27" ry="4.568" transform="translate(458.961 -93.485)" fill="#44c0ff" opacity="0.2"/>
+      <path id="路径-2" data-name="路径" d="M3.141,0a.7.7,0,0,1,.7.7V2.445h1.75a.7.7,0,1,1,0,1.392H3.837v1.75a.7.7,0,1,1-1.392,0V3.837H.7a.7.7,0,1,1,0-1.392H2.445V.7A.7.7,0,0,1,3.141,0Z" transform="translate(447.005 -125.749)" fill="url(#linear-gradient-6)"/>
+      <path id="路径备份" d="M1.839,0a.407.407,0,0,1,.407.407V1.431H3.271a.407.407,0,0,1,0,.815H2.246V3.271a.407.407,0,0,1-.815,0V2.246H.407a.407.407,0,0,1,0-.815H1.431V.407A.407.407,0,0,1,1.839,0Z" transform="translate(516.987 -147.857) rotate(90)" fill="url(#linear-gradient-6)"/>
+    </g>
+  </g>
+</svg>

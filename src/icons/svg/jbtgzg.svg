@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57.189" height="58" viewBox="0 0 57.189 58">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1" x2="0.065" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#67d4ff"/>
+      <stop offset="1" stop-color="#009aff"/>
+    </linearGradient>
+  </defs>
+  <g id="组_117" data-name="组 117" transform="translate(-774 -686)">
+    <g id="组_103" data-name="组 103" transform="translate(336 185)">
+      <path id="形状_56" data-name="形状 56" d="M805.245,1718c-2.028,0-3.245.812-3.245,3.245v17.846a4.576,4.576,0,0,0,4.867,4.461h17.846c1.217,0,2.028-.541,2.028-2.433v-17.846c0-2.839-1.622-5.273-5.273-5.273Z" transform="translate(-364 -1214.16)" fill="#abd3fb"/>
+      <path id="形状_56_拷贝" data-name="形状 56 拷贝" d="M805.245,1816.552c-2.028,0-3.245-.811-3.245-3.245v-17.846a4.577,4.577,0,0,1,4.867-4.462h17.846c1.217,0,2.028.541,2.028,2.434v17.846c0,2.839-1.622,5.273-5.273,5.273Z" transform="translate(-364 -1257.552)" fill="#abd3fb"/>
+      <path id="形状_56_拷贝_2" data-name="形状 56 拷贝 2" d="M896.5,1816.552c2.028,0,3.245-.811,3.245-3.245v-17.846a4.577,4.577,0,0,0-4.867-4.462H877.028c-1.217,0-2.028.541-2.028,2.434v17.846c0,2.839,1.622,5.273,5.273,5.273Z" transform="translate(-407.391 -1257.552)" fill="#abd3fb"/>
+      <path id="形状_56_拷贝_3" data-name="形状 56 拷贝 3" d="M898.963,1711c2.261,0,3.617.9,3.617,3.605v19.829a5.094,5.094,0,0,1-5.426,4.957H877.26c-1.356,0-2.261-.6-2.261-2.7v-19.829c0-3.155,1.809-5.859,5.878-5.859Z" transform="translate(-407.391 -1210)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="组_113" data-name="组 113" transform="translate(712.097 576)">
+      <g id="组_112" data-name="组 112" transform="translate(97.903 117)">
+        <path id="路径_71" data-name="路径 71" d="M113.116,129.255l-6.84-11.848a.814.814,0,0,0-1.41,0l-6.854,11.872a.814.814,0,0,0,.7,1.221h13.708a.814.814,0,0,0,.691-1.244Zm-6.847-1.239a.7.7,0,1,1-1.4,0v-.022a.7.7,0,1,1,1.4,0Zm0-2.551a.7.7,0,0,1-1.4,0v-3.712a.7.7,0,1,1,1.4,0Zm0,0" transform="translate(-97.903 -117)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

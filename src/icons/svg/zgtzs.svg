@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.846" height="41" viewBox="0 0 35.846 41">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.071" y1="0.522" x2="0.019" y2="0.522" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#67d4ff"/>
+      <stop offset="1" stop-color="#009aff"/>
+    </linearGradient>
+    <filter id="矩形_19" x="2.605" y="3.327" width="33.241" height="12.226" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#999" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_20" x="2.605" y="12.417" width="33.241" height="12.226" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-color="#999" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="矩形_21" x="2.605" y="21.508" width="23.466" height="12.226" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-3"/>
+      <feFlood flood-color="#999" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="矩形_167" data-name="矩形 167" width="14.805" height="14.761" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="1" y1="0" x2="0.065" y2="1" xlink:href="#linear-gradient"/>
+    <clipPath id="clip-path-2">
+      <rect id="矩形_22" data-name="矩形 22" width="15.843" height="15.843" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="组_174" data-name="组 174" transform="translate(-257.372 -624.326)">
+    <g id="组_77" data-name="组 77" transform="translate(257.872 624.826)">
+      <path id="路径_45" data-name="路径 45" d="M959.782,383.928H930.616a2.82,2.82,0,0,0-2.812,2.812v34.376a2.82,2.82,0,0,0,2.812,2.812h29.166a2.82,2.82,0,0,0,2.812-2.812V386.74a2.816,2.816,0,0,0-2.812-2.812Zm0,0" transform="translate(-927.804 -383.928)" stroke="rgba(0,0,0,0)" stroke-width="1" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="组_78" data-name="组 78" transform="translate(263.478 631.153)">
+      <g transform="matrix(1, 0, 0, 1, -6.11, -6.83)" filter="url(#矩形_19)">
+        <rect id="矩形_19-2" data-name="矩形 19" width="24.241" height="3.226" rx="1.613" transform="translate(6.11 6.83)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -6.11, -6.83)" filter="url(#矩形_20)">
+        <rect id="矩形_20-2" data-name="矩形 20" width="24.241" height="3.226" rx="1.613" transform="translate(6.11 15.92)" fill="#fff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -6.11, -6.83)" filter="url(#矩形_21)">
+        <rect id="矩形_21-2" data-name="矩形 21" width="14.466" height="3.226" rx="1.613" transform="translate(6.11 25.01)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="蒙版组_10" data-name="蒙版组 10" transform="translate(277.857 650.061)" clip-path="url(#clip-path)">
+      <g id="组_970" data-name="组 970" transform="translate(0.536 0.535)">
+        <path id="路径_119" data-name="路径 119" d="M778.442,560.024a7.118,7.118,0,1,1,7.139-7.118,7.138,7.138,0,0,1-7.139,7.118Zm0,0" transform="translate(-770.341 -544.828)" fill="url(#linear-gradient-2)"/>
+        <path id="路径_120" data-name="路径 120" d="M775.985,544.3a6.154,6.154,0,1,1-6.172,6.154,6.164,6.164,0,0,1,6.172-6.154m0-1.929a8.078,8.078,0,1,0,8.1,8.078,8.1,8.1,0,0,0-8.1-8.078Zm0,0" transform="translate(-767.883 -542.368)" fill="#fff"/>
+        <path id="路径_121" data-name="路径 121" d="M0,0,2.4,0l.02,13.584-2.4,0Z" transform="translate(2.539 4.184) rotate(-45)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="蒙版组_5" data-name="蒙版组 5" transform="translate(276.857 648.983)" clip-path="url(#clip-path-2)">
+      <g id="组_81" data-name="组 81" transform="translate(-0.128 -5.008)">
+        <path id="路径_48" data-name="路径 48" d="M777.506,558.668a6.444,6.444,0,1,1,6.2-6.44,6.333,6.333,0,0,1-6.2,6.44Zm0,0" transform="translate(-767.739 -537.691)" fill="url(#linear-gradient-2)"/>
+        <text id="改" transform="translate(6.565 17)" fill="#fff" font-size="7" font-family="HYZhengYuan-EES, HYZhengYuan" letter-spacing="0.025em"><tspan x="0" y="0">改</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
