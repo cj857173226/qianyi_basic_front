@@ -26,6 +26,7 @@
 
 .avue-left {
     box-shadow: 5px 6px 4px 1px rgba(211, 211, 211, 0.6);
+    z-index: 10;
 }
 
 .avue-left-hidden {
@@ -59,22 +60,16 @@
 
 .avue-main {
     box-sizing: border-box;
-    // overflow: hidden;
+    overflow: hidden;
     width: 100%;
     position: relative;
-    // padding: 20px;
-    height: 100%;
-
-    .avue-view-main {
-        height:100%;
-        padding: 20px;
-        overflow: auto;
-    }
 }
 
 .avue-view {
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
+    overflow: auto;
 }
 
 .avue-footer {
@@ -112,71 +107,3 @@
         display: block;
     }
 }
-
-// @media screen and (max-width: 992px) {
-//     $width: 240px;
-//     // ele的自适应
-//     .el-dialog,
-//     .el-message-box {
-//         width: 98% !important;
-//     }
-//     //登录页面
-//     .login-left {
-//         display: none !important;
-//     }
-//     .login-logo {
-//         padding-top: 30px !important;
-//         margin-left: -30px;
-//     }
-//     .login-weaper {
-//         margin: 0 auto;
-//         width: 96% !important;
-//     }
-//     .login-border {
-//         border-radius: 5px;
-//         padding: 40px;
-//         margin: 0 auto;
-//         float: none !important;
-//         width: 100% !important;
-//     }
-//     .login-main {
-//         width: 100% !important;
-//     }
-//     //主框架
-//     .avue-tags {
-//         display: none;
-//     }
-//     .avue-left,
-//     .avue-logo {
-//         left: -$width;
-//     }
-//     .avue-main {
-//         left: 0;
-//         width: 100%;
-//     }
-//     .avue-header {
-//         margin-bottom: 15px;
-//         padding-left: 15px;
-//     }
-//     .top-bar__item {
-//         display: none;
-//     }
-//     .avue--collapse {
-//         .avue-left,
-//         .avue-logo {
-//             width: $width;
-//             left: 0;
-//         }
-//         .avue-main {
-//             left: $width;
-//             width: 100%;
-//         }
-//         .avue-header {
-//             padding: 0;
-//             transform: translate3d(230px, 0, 0);
-//         }
-//         .avue-shade {
-//             display: block;
-//         }
-//     }
-// }

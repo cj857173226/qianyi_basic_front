@@ -35,7 +35,7 @@ export const SystemSettings = {
 
   IS_INTERCEPT: false, //是否做登录拦截
 
-  IS_NAV_TAGS: false, // 是否开启路由标签
+  IS_NAV_TAGS: true, // 是否开启路由标签
 
   IS_NAV_SPLIT: true, // 导航布局是否使用分割
 

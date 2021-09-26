@@ -49,7 +49,15 @@
         border-radius: 4px;
     }
 }
-
+.gou-table-box{
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+// .gou-table-box .el-table__body-wrapper{
+//     z-index: 4;
+// }
 .mulu-main {
     .search-wrap {
         background: #f6f8fb !important;

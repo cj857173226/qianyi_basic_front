@@ -1,14 +1,16 @@
 $input-with: 180px;
 
 .page-outer {
-    // padding: 0px 24px 20px;
+    padding: 0px 15px 0px;
+    overflow-y: auto;
     .column-page-wrap {
         display: flex;
         .column-list-wrap {
-            width: calc(100% - 250px);
+            width: calc(100% - 210px);
         }
     }
     .page-inner,
+    .gou-table-box,
     .column-list-wrap {
         padding: 20px;
         border-radius: 8px;
