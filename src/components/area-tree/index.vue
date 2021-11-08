@@ -203,17 +203,17 @@ export default {
     };
   },
   created() {
-    this.height = document.body.clientHeight - 100 + "px";
+    this.height = document.body.clientHeight - 130 + "px";
   },
   mounted() {
     window.onresize = () => {
-      this.height = document.body.clientHeight - 100 + "px";
+      this.height = document.body.clientHeight - 130 + "px";
     };
     this.getAreaData();
   },
   beforeDestroy() {
     window.removeEventListener("scroll", function () {
-      this.height = document.body.clientHeight - 100 + "px";
+      this.height = document.body.clientHeight - 130 + "px";
     });
   },
   methods: {

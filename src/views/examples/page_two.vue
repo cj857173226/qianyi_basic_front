@@ -5,25 +5,29 @@
       <div class="column-list-wrap">
         <!-- 列表搜索条件 -->
         <div class="page-search-line">
-          <div class="search-item">
-            <div class="s-label">关键字</div>
-            <el-input
-              placeholder="关键字搜索"
-              v-model="formData.subFullName"
-              clearable
-              @keyup.enter.native="getData"
-              @clear="getData"
-            >
-            </el-input>
-          </div>
+          <el-form
+            size="small"
+            :inline="true"
+            class="search-item"
+            label-width="80px"
+          >
+            <el-form-item label="关键字:">
+              <el-input
+                placeholder="请输入"
+                v-model="formData.username"
+                clearable
+                @keyup.enter.native="getData"
+                @clear="getData"
+              ></el-input>
+            </el-form-item>
+          </el-form>
           <div class="buttons-wrap">
-            <el-button size="large" type="primary" @click="search($event)"
+            <el-button size="small" type="primary" @click="search($event)"
               >查询</el-button
             >
-            <el-button size="large" @click="clean($event)">重置</el-button>
+            <el-button size="small" @click="clean($event)">重置</el-button>
           </div>
         </div>
-    
 
         <div class="list-wrap">
           <el-row>

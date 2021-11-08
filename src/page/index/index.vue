@@ -11,17 +11,19 @@
       </div>
       <div class="avue-main">
         <!-- 顶部标签卡 -->
-        <tags :style="!menu || menu.length === 0 ? 'display:none' : ''" />
-        <!-- 主体视图层 -->
-        <div
-          class="avue-view-main"
-          :style="{ paddingTop: showTag ? '50px' : '20px' }"
-        >
-          <keep-alive>
-            <router-view v-if="$route.meta.$keepAlive" class="avue-view" />
-          </keep-alive>
-          <router-view v-if="!$route.meta.$keepAlive" class="avue-view" />
-        </div>
+        <el-scrollbar style="height: 100%">
+          <tags :style="!menu || menu.length === 0 ? 'display:none' : ''" />
+          <!-- 主体视图层 -->
+          <div
+            class="avue-view-main"
+            :style="{ paddingTop: showTag ? '50px' : '20px' }"
+          >
+            <keep-alive>
+              <router-view v-if="$route.meta.$keepAlive" class="avue-view" />
+            </keep-alive>
+            <router-view v-if="!$route.meta.$keepAlive" class="avue-view" />
+          </div>
+        </el-scrollbar>
       </div>
     </div>
     <div class="avue-shade" @click="showCollapse" />

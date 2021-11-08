@@ -87,22 +87,22 @@ $input-with: 180px;
         }
         .page-search-line {
             margin-bottom: 8px;
-            min-height: 42px;
             display: flex;
-            align-items: center;
-            flex-wrap: wrap;
             .s-label {
                 font-size: 16px;
             }
             .search-item {
-                margin-bottom: 8px;
                 display: flex;
-                align-items: center;
                 flex-wrap: wrap;
+                flex: 1;
                 margin-right: 58px;
+                .el-form-item{
+                    margin-bottom: 8px;
+                    margin-right: 10px;
+                }
                 .el-select,
                 .el-input {
-                    width: 280px;
+                    width: 240px;
                     .search-icon {
                         font-size: 20px;
                         font-weight: 800;
@@ -117,6 +117,8 @@ $input-with: 180px;
                 }
             }
             .buttons-wrap {
+                text-align: right;
+                min-width:200px;
                 margin: 0 0 8px;
                 .el-button {
                     min-width: 64px;
@@ -125,15 +127,9 @@ $input-with: 180px;
         }
         .page-tools-line {
             margin-bottom: 8px;
-            min-height: 42px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
             .el-button {
                 display: flex;
-                padding: 12px 30px;
                 .icon-text {
-                    font-size: 20px;
                     margin-right: 2px;
                     color: #ff6060;
                 }
