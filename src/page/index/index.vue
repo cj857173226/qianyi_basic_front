@@ -97,7 +97,8 @@ export default {
       this.$store.commit("SET_COLLAPSE");
     },
     openMenu(item = {}) {
-      this.$store.dispatch("GetMenu").then((data) => {
+      this.$store.dispatch("GetMenu", {type: true, id: item.id}).then(data => {
+        console.log(data)
         if (data.length !== 0) {
           this.$router.$avueRouter.formatRoutes(data, true);
         }

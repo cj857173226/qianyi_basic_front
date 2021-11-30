@@ -2,7 +2,12 @@
   <div class="avue-top">
     <div class="top-right">
       <div class="top-bar__left">
-        <img class="logo" :src="logo" alt="" /> {{title}}
+        <img class="logo" :src="logo" alt="" /> {{ title }}
+      </div>
+      <div class="top-bar__title">
+        <div v-if="showMenu" class="top-bar__item top-bar__item--show">
+          <top-menu />
+        </div>
       </div>
       <div class="top-bar__right">
         <el-dropdown>
@@ -11,7 +16,7 @@
             <div class="user-avatar">
               <i class="el-icon-s-custom"></i>
             </div>
-            <span class="el-dropdown-username">{{userInfo.username}}</span>
+            <span class="el-dropdown-username">{{ userInfo.username }}</span>
             <i class="el-icon-caret-bottom el-icon--right" />
           </span>
           <el-dropdown-menu slot="dropdown">
@@ -30,14 +35,17 @@ import { mapGetters, mapState } from "vuex";
 import { fullscreenToggel, handleImg, listenfullscreen } from "@/util/util";
 import logo from "@/../public/img/logo.png";
 import webiste from "@/const/website";
+import topMenu from "./top-menu";
 export default {
   name: "Top",
-  components: {},
+  components: {
+    topMenu,
+  },
   filters: {},
   data() {
     return {
       logo: logo,
-      title:webiste.title
+      title: webiste.title,
     };
   },
   computed: {
@@ -67,6 +75,7 @@ export default {
   mounted() {
     listenfullscreen(this.setScreen);
     // this.getCenterInfo();
+      console.log(this.showMenu)
   },
   methods: {
     handleScreen() {

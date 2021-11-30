@@ -102,7 +102,7 @@ export const setTheme = (name) => {
 /**
  *加密处理
  */
-export const encryption = (params) => {
+ export const encryption = (params) => {
   let {
     data,
     type,
@@ -124,8 +124,8 @@ export const encryption = (params) => {
         data,
         key, {
         iv: iv,
-        mode: CryptoJS.mode.CBC,
-        padding: CryptoJS.pad.ZeroPadding
+        mode: CryptoJS.mode.CFB,
+        padding: CryptoJS.pad.NoPadding
       })
       result[ele] = encrypted.toString()
     })

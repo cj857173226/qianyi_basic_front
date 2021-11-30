@@ -1,5 +1,5 @@
 import { getStore, removeStore, setStore } from '@/util/store'
-import website from '@/const/website'
+import website, { SystemSettings } from '@/const/website'
 const common = {
 
   state: {
@@ -16,7 +16,7 @@ const common = {
     showFullScreen: getStore({ name: 'showFullScreen' }),
     showTheme: getStore({ name: 'showTheme' }),
     showColor: getStore({ name: 'showColor' }),
-    showMenu: getStore({ name: 'showMenu' }),
+    showMenu: getStore({ name: 'showMenu' }) || SystemSettings.SHOW_TOP_MENU,
     theme: getStore({ name: 'theme' }) || '#00C2FF',
     themeName: getStore({ name: 'themeName' }) || 'theme-white',
     lockPasswd: getStore({ name: 'lockPasswd' }) || '',

@@ -31,9 +31,9 @@ export default {
 
 export const SystemSettings = {
 
-  IS_CUSTOM_MENU: true, // 是否启用自定义菜单
+  IS_CUSTOM_MENU: false, // 是否启用自定义菜单
 
-  IS_INTERCEPT: false, //是否做登录拦截
+  IS_INTERCEPT: true, //是否做登录拦截
 
   IS_NAV_TAGS: true, // 是否开启路由标签
 
@@ -42,4 +42,8 @@ export const SystemSettings = {
   MENU_TOP_LOGO: './img/menu-top.png', // 菜单顶部小LOGO
 
   MENU_TOP_TEXT_LOGO: './img/menu-top-text.png', // 菜单顶部带文字的长LOGO
+
+  LOGIN_CHECK_CODE: false, // 登录验证码
+
+  SHOW_TOP_MENU: true, //是否显示顶部菜单
 }

@@ -9,8 +9,10 @@ import { Message } from "element-ui";
 const version = window.globalConfig.VERSION;
 import qs from "qs";
 import store from "../store";
-
+const is_Dev = process.env.NODE_ENV == "development" ? true : false;
+let baseUrl = is_Dev ? window.globalConfig.DEV_BASE_API : window.globalConfig.PRO_BASE_API;
 axios.defaults.timeout = 50000;
+axios.defaults.baseURL = baseUrl;
 axios.defaults.validateStatus = function (status) {
   return status >= 200 && status <= 500; // 默认的
 };
@@ -57,7 +59,7 @@ axios.interceptors.request.use(
 axios.interceptors.response.use(
   (res) => {
     NProgress.done();
-    
+
     return res;
   },
   (error) => {

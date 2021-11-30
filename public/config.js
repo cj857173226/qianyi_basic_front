@@ -5,8 +5,8 @@ var BASE_URL = (window.location.origin ? window.location.origin : window.locatio
 window.globalConfig = {
     PRO_BASE_API: BASE_URL,
 
-    // DEV_BASE_API: '/api',
-    DEV_BASE_API: 'http://114.115.200.195:8081/wm',
+    DEV_BASE_API: '/api',
+    // DEV_BASE_API: 'http://192.168.0.103:49999',
 
     VERSION: "wpg",
 

@@ -34,8 +34,8 @@ module.exports = {
     proxy: {
       "/api": {
         // target: "http://192.168.40.67:8999",
-        // target: "https://club.cn.utools.club",
-        target: "http://114.115.200.195:8081/wm",
+        target: "http://192.168.0.103:49999",
+        // target: "http://114.115.200.195:8081/wm",
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",

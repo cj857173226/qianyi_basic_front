@@ -12,15 +12,16 @@
         <div class="collapse-btn" @click="setCollapse">
           <i class="el-icon-s-fold" :class="{ isOpen: isCollapse }"></i>
         </div>
-        <div class="page-name">
+        <!-- <div class="page-name">
           {{ $route.name }}
+        </div> -->
+        <div class="top-bar__title">
+          <div v-if="showMenu" class="top-bar__item top-bar__item--show">
+            <top-menu />
+          </div>
         </div>
       </div>
-      <!-- <div class="top-bar__title">
-        <div v-if="showMenu" class="top-bar__item top-bar__item--show">
-          <top-menu />
-        </div>
-      </div> -->
+
       <div class="top-bar__right">
         <el-dropdown>
           <span class="el-dropdown-link">
@@ -53,9 +54,12 @@
 import { mapGetters, mapState } from "vuex";
 import { fullscreenToggel, handleImg, listenfullscreen } from "@/util/util";
 import { SystemSettings } from "@/const/website";
+import topMenu from "./top-menu";
 export default {
   name: "Top",
-  components: {},
+  components: {
+    topMenu,
+  },
   filters: {},
   data() {
     return {
@@ -90,6 +94,7 @@ export default {
   mounted() {
     listenfullscreen(this.setScreen);
     // this.getCenterInfo();
+    console.log(this.showMenu);
   },
   methods: {
     handleScreen() {

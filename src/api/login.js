@@ -77,7 +77,12 @@ export const loginBySocial = (state, code) => {
     params: { mobile: state + "@" + code, grant_type },
   });
 };
-
+export const getUserInfo = () => {
+  return request({
+    url: baseUrl + '/admin/user/info',
+    method: 'get'
+  })
+}
 export const logout = (token, id) => {
   return request({
     url: baseUrl + '/auth/token/logout',

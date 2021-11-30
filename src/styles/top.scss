@@ -139,10 +139,10 @@
 
 .top-bar__left,
 .top-bar__right {
-    height: 64px;
+    height: 60px;
 
     i {
-        line-height: 64px;
+        line-height: 60px;
     }
 }
 
@@ -201,6 +201,42 @@
     font-weight: 400;
 }
 
-.top-bar__item--show {
-    display: none !important;
+.top-menu{
+    .el-menu{
+        background-color: $menu-bg;
+        .el-menu-item {
+            span,
+            i {
+                color: $menu-color;
+                &[class*="icon-"] {
+                    color: $menu-icon-color;
+                }
+                &.el-submenu__icon-arrow {
+                    color: $menu-color;
+                }
+            }
+            span {
+                font-size: 14px;
+            }
+            &:hover {
+                background-color: $top-menu-hover-bg;
+                color: $top-menu-hover-color;
+                span,
+                i {
+                    color: $top-menu-icon-hover-color;
+                }
+            }
+            &.is-active {
+                background-color: $top-menu-hover-bg;
+                span,
+                i {
+                    color: $top-menu-icon-hover-color;
+                }
+                &:hover {
+                    background-color: $menu-hover-bg;
+                }
+            }
+        }
+    }
+    
 }

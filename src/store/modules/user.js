@@ -6,6 +6,7 @@ import {
   loginBySocial,
   loginByUsername,
   logout,
+  getUserInfo,
   refreshToken,
 } from "@/api/login";
 import { deepClone, encryption } from "@/util/util";
@@ -48,6 +49,7 @@ const user = {
       getStore({
         name: "permissions",
       }) || [],
+    roles: [],
     roleCodes: [],
     menu:
       getStore({
@@ -76,15 +78,6 @@ const user = {
       }) || "",
   },
   actions: {
-    LoginCode({ commit }, userInfo) {
-      const data = userInfo;
-      commit("SET_ACCESS_TOKEN", data.access_token);
-      commit("SET_REFRESH_TOKEN", data.refresh_token);
-      commit("SET_EXPIRES_IN", data.expires_in);
-      commit("SET_USER_INFO", data.user_info);
-      commit("SET_PERMISSIONS", data.user_info.authorities || []);
-      commit("CLEAR_LOCK");
-    },
     // 根据用户名登录
     LoginByUsername({ commit }, userInfo) {
       const user = encryption({
@@ -168,6 +161,20 @@ const user = {
           });
       });
     },
+    // 查询用户信息
+    GetUserInfo({ commit }) {
+      return new Promise((resolve, reject) => {
+        getUserInfo().then((res) => {
+          const data = res.data.data || {}
+          commit('SET_USER_INFO', data.sysUser)
+          commit('SET_ROLES', data.roles || [])
+          commit('UPDATE_PERMISSIONS', data.permissions || [])
+          resolve(data)
+        }).catch(() => {
+          reject()
+        })
+      })
+    },
     // 登出
     LogOut({ commit, state }, userId) {
       return new Promise((resolve, reject) => {
@@ -181,7 +188,7 @@ const user = {
               commit("SET_ACCESS_TOKEN", "");
               commit("SET_REFRESH_TOKEN", "");
               commit("SET_EXPIRES_IN", "");
-              commit("SET_roleCodeS", []);
+              commit('SET_ROLES', [])
               commit("DEL_ALL_TAG");
               commit("CLEAR_LOCK");
               resolve(response);
@@ -204,7 +211,7 @@ const user = {
         commit("SET_USER_INFO", {});
         commit("SET_ACCESS_TOKEN", "");
         commit("SET_REFRESH_TOKEN", "");
-        commit("SET_roleCodeS", []);
+        commit('SET_ROLES', [])
         commit("DEL_ALL_TAG");
         commit("CLEAR_LOCK");
         resolve();
@@ -214,7 +221,8 @@ const user = {
     GetMenu({ commit, state }, obj) {
       return new Promise((resolve) => {
         if (!is_custom_menu) {
-          getMenu(state.refresh_token).then((res) => {
+          console.log(obj.id);
+          getMenu(obj.id).then((res) => {
             if (res.status === 401) {
               Message({
                 message: "登录过期",
@@ -230,7 +238,8 @@ const user = {
             menu.forEach((ele) => {
               addPath(ele);
             });
-            commit("SET_MENU", { type: true, menu });
+            let type = obj.type
+            commit("SET_MENU", { type, menu });
             resolve(menu);
           });
         } else {
@@ -300,8 +309,9 @@ const user = {
     SET_MENU_ALL: (state, menuAll) => {
       state.menuAll = menuAll;
     },
-    SET_roleCodeS: (state, roleCodes) => {
-      state.roleCodes = roleCodes;
+
+    SET_ROLES: (state, roles) => {
+      state.roles = roles
     },
     SET_PERMISSIONS: (state, permissions) => {
       const list = {};
@@ -314,6 +324,19 @@ const user = {
         content: list,
         type: "session",
       });
+    },
+    UPDATE_PERMISSIONS: (state, permissions) => {
+      const list = {}
+      for (let i = 0; i < permissions.length; i++) {
+        list[permissions[i]] = true
+      }
+
+      state.permissions = list
+      setStore({
+        name: 'permissions',
+        content: list,
+        type: 'session'
+      })
     },
     SET_USER_SEAL: (state, userSeal) => {
       state.user_seal = userSeal;
@@ -331,6 +354,7 @@ const user = {
         type: "session",
       });
     },
+
   },
 };
 export default user;

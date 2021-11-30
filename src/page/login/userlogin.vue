@@ -39,7 +39,7 @@
               />
             </el-input>
           </el-form-item>
-          <el-form-item prop="code" class="code-line">
+          <el-form-item prop="code" class="code-line" v-if="loginCheckCode">
             <img slot="label" :src="checkCodeIcon" />
             <el-input
               v-model.trim="loginForm.code"
@@ -74,12 +74,13 @@ import { mapGetters } from "vuex";
 import usernameIcon from "@/../public/img/username-icon.png";
 import passwordIcon from "@/../public/img/password-icon.png";
 import checkCodeIcon from "@/../public/img/check-code-icon.png";
-
+import { SystemSettings } from "@/const/website";
 import $ from "jquery";
 export default {
   name: "Userlogin",
   data() {
     return {
+      loginCheckCode: SystemSettings.LOGIN_CHECK_CODE, // 是否开启验证码
       codeLogin: false,
       usernameIcon: usernameIcon,
       passwordIcon: passwordIcon,
@@ -146,13 +147,14 @@ export default {
       } catch (err) {}
     },
     async getCode() {
+      if(!this.loginCheckCode) return;
       try {
         this.randomStr = Date.now();
         const res = await this.$httpRequest({
           url: "/code?randomStr=" + this.randomStr,
           method: "get",
         });
-        if (res.code===0) {
+        if (res.code === 0) {
           this.codeImg = res.data;
         } else {
           this.$message.error("验证码获取失败");

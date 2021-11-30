@@ -20,13 +20,11 @@ const is_Dev = process.env.NODE_ENV == "development" ? true : false;
 let baseUrl = is_Dev ? window.globalConfig.DEV_BASE_API : window.globalConfig.PRO_BASE_API;
 let version = window.globalConfig.VERSION;
 
-export function getMenu(token) {
+export function getMenu(id) {
   return request({
     url: baseUrl + "/admin/menu",
     method: "get",
-    headers: {
-      Authorization: "Bearer " + token,
-    },
+    params: {parentId: id},
   });
 }
 
